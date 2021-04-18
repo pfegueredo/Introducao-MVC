@@ -1,0 +1,33 @@
+﻿@model IntroducaoMVC.Models.Voluntario
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Lista</h2>
+<div>
+    <b>@Html.LabelFor(x=>x.voluntario_id)</b>
+</div>
+<div>
+    @Model.voluntario_id
+</div>
+<div>
+    <b>@Html.LabelFor(x => x.nome_voluntario)</b>
+</div>
+<div>
+    @Model.nome_voluntario
+</div>
+<div>
+    <b>@Html.LabelFor(x => x.sexo)</b>
+</div>
+<div>
+    @Model.sexo
+</div>
+<div>
+    <b>@Html.LabelFor(x => x.email)</b>
+</div>
+<div>
+    @Model.email
+</div><br/>
+@Html.ActionLink("Voltar", "Index", "Home")

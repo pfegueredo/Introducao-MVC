@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Rotas.Models.Noticia>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Todas As Noticias</h1>
+
+<div>
+    <ul>
+        <!--Mostra as noticias-->
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Titulo, "MostraNoticia", "Home", new
+                {
+                    @noticiaId = item.NoticiaId,
+                @categoria = item.Categoria.ToLower(),
+                @titulo = item.Titulo.ToLower()
+                }, null);
+
+                <em>@Html.DisplayFor(modelItem => item.Categoria)</em>
+                <b>@Html.DisplayFor(modelItem => item.Data)</b>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,50 @@
+﻿@model IntroducaoMVC.Models.Voluntario
+
+@{
+    Layout = "_Layout";
+}
+<h1>Tela de cadastro de Voluntarios</h1>
+
+<!-- ViewData["Id"] -->
+<!-- ViewData["Nome_Voluntario"] -->
+<!-- ViewData["Sexo"]  -->
+<!-- ViewData["Email"] -->
+<br />
+
+<!-- ViewBag.Id<br/> -->
+<!-- ViewBag.Nome_Voluntario -->
+
+<!-- Usando Helper para formulário -->
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{ 
+<!--<form action="Lista" method="POST">-->
+<fieldset>
+    <legend>Informações de voluntarios</legend>
+</fieldset>
+<div>
+    @Html.LabelFor(x => x.voluntario_id)
+</div>
+<div>
+    @Html.EditorFor(x => x.voluntario_id)
+</div>
+<div>
+    @Html.LabelFor(x => x.nome_voluntario)
+</div>
+<div>
+    @Html.EditorFor(x => x.nome_voluntario)
+</div>
+<div>
+    @Html.LabelFor(x => x.sexo)
+</div>
+<div>
+    @Html.EditorFor(x => x.sexo)
+</div>
+<div>
+    @Html.LabelFor(x => x.email)
+</div>
+<div>
+    @Html.EditorFor(x => x.email)
+</div>
+<br />
+<p><input class="btn-primary" type="submit" /></p>
+}
