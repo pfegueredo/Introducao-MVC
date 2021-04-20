@@ -37,3 +37,4 @@ C:\TUDO\Projetos\CSharp\IntroducaoMVC\Rotas\obj\Debug\netcoreapp3.1\Rotas.genrun
 C:\TUDO\Projetos\CSharp\IntroducaoMVC\Rotas\obj\Debug\netcoreapp3.1\Rotas.csproj.CopyComplete
 C:\TUDO\Projetos\CSharp\IntroducaoMVC\Rotas\obj\Debug\netcoreapp3.1\Razor\Views\Home\TodasAsNoticias.cshtml.g.cs
 C:\TUDO\Projetos\CSharp\IntroducaoMVC\Rotas\obj\Debug\netcoreapp3.1\Razor\Views\Home\MostraNoticia.cshtml.g.cs
+C:\TUDO\Projetos\CSharp\IntroducaoMVC\Rotas\obj\Debug\netcoreapp3.1\Razor\Views\Home\MostraCategoria.cshtml.g.cs

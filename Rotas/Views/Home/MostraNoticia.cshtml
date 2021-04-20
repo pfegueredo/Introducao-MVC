@@ -1,7 +1,11 @@
-﻿@model IEnumerable<Rotas.Models.Noticia>
+﻿@model Rotas.Models.Noticia
 
 @{
     ViewBag.Title = "Mostra Noticia";
 }
 
-<h2>Mostra Noticia</h2>
+<h2>@Model.Titulo</h2>
+
+<em>@Model.Data - @Html.ActionLink(Model.Categoria, "MostraCategoria", "Home", new { @categoria = Model.Categoria}, null)</em>
+
+<div>@Model.Conteudo</div>
