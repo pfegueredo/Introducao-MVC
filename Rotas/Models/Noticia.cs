@@ -22,7 +22,7 @@ namespace Rotas.Models
                     Titulo = "Felipe Massa ganha a F1",
                     Conteudo = "Felipe estava jogando duro na estrada",
                     Categoria = "Esportes",
-                    Data = new DateTime(2021,04,16)
+                    Data = new DateTime(2021,04,16),
 
                 },
 
